@@ -1,4 +1,3 @@
 #!/bin/bash
 service httpd start
-initctl restart nodejs
 
