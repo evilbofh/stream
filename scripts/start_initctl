@@ -1,4 +1,4 @@
 #!/bin/bash
 initctl reload-configuration
-if [[ -n $(ps -ef | grep "node Hello.js" | grep -v grep ) ]] ; then  initctl stop nodefs ;  fi
+if [[ -n $(ps -ef | grep "/usr/local/bin/node /usr/local/share/Hello.js" | grep -v grep ) ]] ; then  initctl stop nodefs ;  fi
 initctl start nodejs
